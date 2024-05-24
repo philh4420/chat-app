@@ -6,14 +6,15 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
-let users = [];
-let messages = [];
-
-app.use(express.static(__dirname)); // Serve static files from the root directory
+// Serve static files from the "public" directory
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/index.html');
 });
+
+let users = [];
+let messages = [];
 
 io.on('connection', (socket) => {
   console.log('a user connected');

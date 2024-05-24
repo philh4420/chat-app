@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo(0, document.body.scrollHeight);
 
     // Play notification sound
-    const audio = new Audio('notification.mp3');
+    const audio = new Audio('/notification.mp3');
     audio.play();
   });
 
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.scrollTo(0, document.body.scrollHeight);
 
     // Play notification sound
-    const audio = new Audio('notification.mp3');
+    const audio = new Audio('/notification.mp3');
     audio.play();
   });
 

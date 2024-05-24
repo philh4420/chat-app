@@ -43,14 +43,16 @@ Usage
 5. User List: View the list of currently connected users.
 
 Project Structure
-java
-Copy code
+Ensure your project directory structure is as follows:
 chat-app/
 ├── node_modules/
-├── notification.mp3
+├── public/
+│   ├── notification.mp3
+│   ├── styles.css
+│   └── script.js
 ├── .gitignore
 ├── package.json
+├── vercel.json
+├── README.md
 ├── server.js
-├── index.html
-├── styles.css
-└── script.js
+└── index.html
